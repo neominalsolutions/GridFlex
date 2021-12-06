@@ -1,0 +1,40 @@
+.grid-container {
+    /* sablonu zor bir tablo oluşturacağımızda grid içindeki tüm elemanları dispaly grid ile sararız */
+    display: grid;
+    /* kaç adet sütündan olucaşak bilgisini verdik */
+    /* auto ile otomatik olarak aynı genişliğe sahip olmalarını sağladık */
+    grid-template-columns: auto auto auto auto auto;
+    /* her bir tablo elemanı arasındaki boşluğu ayarladık */
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    /* bir grid'in header kısmını template özelliği kullanarak oluşturduk sadece tablonun başlık alanını hızlı geliştirmek için kullanalım. */
+    /* her bir başlık alanı için bir tag oluşturduk. */
+    /* tablodaki veri için bu yöntemi kullanmayalım. */
+    grid-template-areas:
+    'day seminer seminer seminer seminer'
+    'day schedule schedule topic topic'
+    'day beginTime endTime topic topic'
+    ;
+  }
+  
+  /* grid container class'ına sahip olan bu class altındaki divlere uygulanacak tasarım */
+  /* className > elementName (child selector) olarak geçer  */
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+
+/* her bir anlamlı header etiketinin sahip olduğu class */
+.dayClass { grid-area: day; }
+.seminerClass { grid-area: seminer; }
+.scheduleClass { grid-area: schedule; }
+.beginClass { grid-area: beginTime; }
+.endClass { grid-area: endTime; }
+.topicClass { grid-area: topic; }
+
+
+/* grid-template-areas: içerisindeki yazıma göre ilgili divlere yukarıdaki className uygulanamalıdır. */

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+
+
+
+
+    <div class="grid-container">
+
+        <div class="dayClass">
+            Day
+        </div>
+
+        <div class="seminerClass">
+            Seminer
+        </div>
+
+        <div class="scheduleClass">
+            Schedule
+        </div>
+
+        <div class="beginClass">
+            Begin
+        </div>
+
+        <div class="endClass">
+            End
+        </div>
+
+        <div class="topicClass">
+            Topic
+        </div>
+
+
+        <!-- Rowlara geçtiğimiz yer -->
+        <!-- kaçıncı rowda kaldık -->
+        <!-- 1.adım başlangıç row bulup kaç rowluk aşağı ineceğimizi belirttik. -->
+        <!-- grid-row:4/6; olarak 4 ten başla 6 kadar git 2 rowspan yap  -->
+        <div style="grid-row:4/6;">
+            Monday
+        </div>
+
+        <div style="grid-row:4/6">
+            08:00
+        </div>
+
+        <div style="grid-row:4/6">
+            11:00
+        </div>
+
+        <!-- grid-column ile başlayacağımızı column indeksi verdik. -->
+        <!-- 4. column ,ile başlayıp 2 column ileri git -->
+        <div style="grid-column: 4/6;">
+            XML
+        </div>
+
+        <div style="grid-column: 4/6">
+            XML 2
+        </div>
+
+
+        <!-- 6 rowda kaldık 9 kadar 3 adet git -->
+        <!-- row vedya columnda 1 er adım ilerlermek için başlangıç ve bitiş değeri vermeye gerek yok -->
+
+        <div style="grid-row:6/9;">
+            Tuesday
+        </div>
+
+        <!-- her div ile 1 yan sütuna geçtik -->
+        <div>
+            09:00
+        </div>
+
+        <div>
+            13:00
+        </div>
+
+
+        <!-- 4.sutun ile 6 sütun arasında git -->
+        <div style="grid-column: 4/6">
+            JSON
+        </div>
+
+
+        <div>
+            21:30
+        </div>
+
+        <div>
+            22:40
+        </div>
+
+        <!-- 2 colspan 2 rowspan var -->
+        <div style="grid-column: 4/6; grid-row:7/9">
+            JSON 2
+        </div>
+
+
+        <div>
+            08:45
+        </div>
+
+        <div>
+            13:56
+        </div>
+
+
+        <div>
+            Wednesday
+        </div>
+
+
+        <div>
+            21:30
+        </div>
+
+        <div>
+            22:40
+        </div>
+
+        <div style="grid-column: 4/6;">
+            HTML 5
+        </div>
+ 
+
+    </div>
+
+
+
+
+</body>
+
+</html>
